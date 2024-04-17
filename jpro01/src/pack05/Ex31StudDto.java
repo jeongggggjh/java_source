@@ -20,6 +20,7 @@ public class Ex31StudDto {
 		
 	}
 	
+	
 //	public Ex31StudDto(String name, int kor, int eng) {
 //		this.name = name;
 //		this.kor = kor;

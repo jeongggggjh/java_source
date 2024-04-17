@@ -20,6 +20,7 @@ public class Ex30DtoTest {
 			System.out.println(s);
 		}
 	}
+	
 
 	public void insertList() { // 레코드 단위(DTO)로 학생 정보 입력해 list에 저장
 		dto = new Ex30StudentDto();

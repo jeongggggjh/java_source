@@ -19,6 +19,7 @@ public class Ex30StudentDto {
 
 	}
 
+	
 	public String getHakbun() {
 		return hakbun;
 	}

@@ -48,6 +48,7 @@ public class Ex32DtoTest2 {
 		datas[1] = "주먹밥,80,75,88";
 		datas[2] = "비빔밥,77,88,80";
 				
+		
 		Ex32DtoTest2 test2 = new Ex32DtoTest2();
 		test2.inputData(datas);
 		test2.displayData();

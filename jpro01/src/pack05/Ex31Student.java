@@ -20,6 +20,7 @@ public class Ex31Student {
 		list.add(dto);
 	}
 	
+	
 	public void showList() {
 		for(Ex31StudDto i : list) {
 			System.out.println("이름 : " + i.getName() + ", 국어 : " + i.getKor() + ", 영어 : " + i.getEng() + ", 총점 : " + (i.getEng() + i.getKor()));
