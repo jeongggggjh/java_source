@@ -53,7 +53,7 @@ public class Test09while {
 			i++;
 		}
 		System.out.printf("num은 %d factorial은 %d이다.", num, factorial);
-
+		
 		System.out.println("\n다중 while-----");
 		int a = 1;
 		while (a <= 3) {
