@@ -55,7 +55,7 @@ public class Ex46Menu extends JFrame implements ActionListener {
 		mnuMes = new JMenuItem("메세지 창");
 		mnuOk = new JMenuItem("확인 창");
 		mnuInput = new JMenuItem("입력 창");
-		menu.add(mnuMes); // 메뉴에 메뉴 아이템 등록
+		menu.add(mnuMes); // 메뉴에 메뉴 아이템 등록s
 		menu.add(mnuOk);
 		menu.add(mnuInput);
 		
