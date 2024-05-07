@@ -43,13 +43,13 @@ public class ExBuser {
 					);
 			// System.out.println(rs.next()); // cursor (레코드 포인터) 이동
 			// System.out.println(rs.getString("sang"));
-			System.out.println("사번 이름 부서 직급 연봉");
+			System.out.println("사번\t 이름\t 부서\t 직급\t 연봉");
 			while(rs.next()) {
-				int jikwon_no = rs.getInt("사번");
-				String jikwon_name = rs.getString("이름");
-				String buser_name = rs.getString("부서");
-				String jikwon_jik = rs.getString("직급");
-				int jikwon_pay = rs.getInt("연봉");
+				String jikwon_no = rs.getString("사번") + "\t";
+				String jikwon_name = rs.getString("이름") + "\t";
+				String buser_name = rs.getString("부서") + "\t";
+				String jikwon_jik = rs.getString("직급") + "\t";
+				String jikwon_pay = rs.getInt("연봉") + "\t";
 				System.out.println(jikwon_no + " " + jikwon_name + " " + buser_name + " " + jikwon_jik + " " + jikwon_pay);
 				
 			}

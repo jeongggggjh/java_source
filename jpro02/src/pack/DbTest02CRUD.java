@@ -15,7 +15,7 @@ public class DbTest02CRUD {
 
 	public DbTest02CRUD() { // secure coding의 하나로 연결정보 별도 저장 후 읽기
 		try {
-			properties.load(new FileInputStream("C:\\work\\jpro02\\src\\pack\\dbtest2.properties"));
+			properties.load(new FileInputStream("C:\\work\\jsou\\jpro02\\src\\pack\\dbtest2.properties"));
 			Class.forName(properties.getProperty("driver"));
 			conn = DriverManager.getConnection(properties.getProperty("url"), properties.getProperty("user"),
 					properties.getProperty("passwd"));

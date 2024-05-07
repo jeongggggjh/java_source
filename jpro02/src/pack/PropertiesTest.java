@@ -16,7 +16,7 @@ public class PropertiesTest {
 		Properties properties = new Properties();
 		
 		try {
-			properties.load(new FileInputStream("C:\\work\\jpro02\\src\\pack\\ex.properties"));
+			properties.load(new FileInputStream("C:\\work\\jsou\\jpro02\\src\\pack\\ex.properties"));
 			System.out.println(properties.getProperty("mes1"));
 			System.out.println(properties.getProperty("mes2"));
 		} catch (Exception e) {

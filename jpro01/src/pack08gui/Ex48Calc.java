@@ -30,7 +30,7 @@ public class Ex48Calc extends JFrame implements ActionListener {
 
 		layoutInit();
 
-		setBounds(200, 200, 400, 300);
+		setBounds(200, 200, 400, 300);  
 		setVisible(true);
 
 		addWindowListener(new WindowAdapter() {
