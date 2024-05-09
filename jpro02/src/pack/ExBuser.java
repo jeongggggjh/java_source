@@ -52,6 +52,7 @@ public class ExBuser {
 				String jikwon_pay = rs.getInt("연봉") + "\t";
 				System.out.println(jikwon_no + " " + jikwon_name + " " + buser_name + " " + jikwon_jik + " " + jikwon_pay);
 				
+				
 			}
 			
 			
