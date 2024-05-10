@@ -10,7 +10,7 @@ import java.net.URL;
 // URL 클래스로 특정 웹 서버 컴의 문서 읽기 
 // 인터넷이 가능한 서버들의 자원에 접근하여 주소 및 기타 정보를 다루는 클래스 
 
-public class Net1URL {
+public class Net01URL {
 
 	public static void main(String[] args) {
 		try {
