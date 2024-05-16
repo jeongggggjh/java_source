@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>layout</title>
+<style type="text/css">
+body {
+	width: 95%;
+	margin: 0 auto;
+}
+
+h2#title {
+	text-align: center;
+}
+
+ul>li.go_site {
+	float: left;
+	width: 60px;
+	margin-left: 5px;
+	list-style: none;
+}
+
+ul.head {
+	border-width: 1px;
+	width: 90%;
+	overflow: auto;
+}
+
+nav {
+	float: left;
+	width: 120px;
+}
+
+#contents {
+	float: left;
+	width: 400;
+}
+
+#ad {
+	float: left;
+	width: 200;
+	font-size: 0.8em;
+}
+
+footer {
+	margin-top: 250px;
+	clear: both;
+}
+
+</style>
+</head>
+<body>
+	<h2 id="title">* CSS로 화면 레이아웃 연습 *</h2>
+	<header>
+		<h3>여기는 머리글</h3>
+		<ul class="head">
+			<li class="go_site"><a href="https://www.naver.com">네이버</a></li>
+			<li class="go_site"><a href="https://www.korea.com">코리아</a></li>
+			<li class="go_site"><a href="https://www.google.com">구우글</a></li>
+		</ul>
+	</header>
+	<nav>
+		<h3>항목 선택</h3>
+		<ul>
+			<li>메인</li>
+			<li>자동차</li>
+			<li>반도체</li>
+			<li>스포츠</li>
+			<li>기타</li>
+		</ul>
+	</nav>
+	<div id="contents">
+		<h3>핫 이슈</h3>
+		<span> 마커스 래시퍼드(영어: Marcus Rashford, MBE[1], 1997년 10월 31일 ~ )는
+			잉글랜드의 축구 선수로 현재 맨체스터 유나이티드에서 스트라이커와 윙어로 뛰고 있다. </span>
+	</div>
+
+	<div id="ad">
+		<h3>광고 글</h3>
+		<ul>
+			<li>현대</li>
+			<li>삼성</li>
+			<li>엘지</li>
+		</ul>
+	</div>
+	<footer>
+		<b>나는 바닥글</b>&nbsp;&nbsp;<br>공지 사항을 주로 기술
+	</footer>
+</body>
+</html>
