@@ -3,13 +3,15 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.Connection"%>
+
 <%@ page language="java" contentType="text/xml; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <jikwons> 
 <%
 String gubun = request.getParameter("gubun");
 String name = request.getParameter("name");
-// sangdata 테이블을 읽어 XML 형식으로 출력
+
+// jikwon 테이블을 읽어 XML 형식으로 출력
 Connection conn = null;
 PreparedStatement pstmt = null;
 ResultSet rs = null;
