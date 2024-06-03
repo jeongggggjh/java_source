@@ -31,12 +31,14 @@ public class del extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		out.println("<html><body>");
-		out.println("<p><table width='80%'>");
+		out.println("<br> 학생들 성적표");
+		out.println("<br><table>");
+		// out.println("<p><table width='80%'>");
 		out.println("<tr><th>번호</th><th>이름</th><th>국어</th><th>영어</th><th>총점</th></tr>");
 		int cnt = 0;
 		out.println("<tr><td colspan='2'>인원수 : " + cnt + "</td></tr>");
 		out.println("</table>");
-		out.println("<br>[<a href='exam.html'>새로입력하러 두개재~~</a>]");
+		out.println("<br>[<a href='exam.html'>새로입력하러~~</a>]");
 		out.println("</body></html>");
 		out.close();
 	}

@@ -34,7 +34,9 @@ public class Grade extends HttpServlet {
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		out.println("<html><body>");
-		out.println("<p><table width='80%'>");
+		out.println("<br> 학생들 성적표");
+		out.println("<br><table>");
+		// out.println("<p><table width='80%'>");
 		out.println("<tr><th>번호</th><th>이름</th><th>국어</th><th>영어</th><th>총점</th></tr>");
 		int cnt = 0;
 		for(int i = 0; i < ex.size(); i++) {
@@ -45,6 +47,12 @@ public class Grade extends HttpServlet {
 				out.println("<td>" + info.getEng() + "</td>");
 				out.println("<td>" + (info.getEng() + info.getKor()) + "</td></tr>");
 				cnt ++;
+				if(info.equals(info.getNo())) { // 번호 중복 체크
+					out.println("중복되었습니다");
+					response.sendRedirect("exam.html"); 
+					return;
+				}
+				
 		}
 		// session.removeAttribute("grade");
 		out.println("<tr><td colspan='2'>인원수 : " + cnt + "</td></tr>");
@@ -56,3 +64,4 @@ public class Grade extends HttpServlet {
 	}
 
 }
+	
