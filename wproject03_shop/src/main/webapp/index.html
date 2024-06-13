@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에이콘 아카데미 강남 만세</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <script>
+        function redirectAfterDelay() {
+            setTimeout(function() {
+                window.location.href = 'guest/guest_index.jsp';
+            }, 3000);
+        }
+    </script>
 </head>
-<body>
-메인화면<p/>
-메뉴1 메뉴2 메뉴3
-<a href="board/boardlist.jsp">게시판</a>
+<body onload="redirectAfterDelay()">
+    <img style="width: 1000px; height: 700px;" src="https://cdn.mediatoday.co.kr/news/photo/202311/313885_438531_4716.jpg" alt="Image">
 </body>
 </html>
