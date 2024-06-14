@@ -31,7 +31,7 @@ window.onload = function() {
 </script>
 </head>
 <body>
-<form action="memberupdateproc.js" name="updateForm" method="post">
+<form action="memberupdateproc.jsp" name="updateForm" method="post">
 <table>
   <tr style="background-color: navy;">
   	<td colspan="2" style="color: white">
