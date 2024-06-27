@@ -2,7 +2,7 @@ package pack.business;
 
 import java.sql.Timestamp;
 
-public class DataFormBean {
+public class DataDto {
 	private String id, name, passwd;
 	private Timestamp reg_date;
 	
@@ -17,7 +17,7 @@ public class DataFormBean {
 	}
 	public void setName(String name) {
 		this.name = name;
-	};
+	}
 	public String getPasswd() {
 		return passwd;
 	}
@@ -30,5 +30,6 @@ public class DataFormBean {
 	public void setReg_date(Timestamp reg_date) {
 		this.reg_date = reg_date;
 	}
+	
 	
 }

@@ -16,7 +16,9 @@ public class ProcessDao implements ProcessInter {
 		List<DataDto> list = null;
 		
 		try {
-			list = sqlSession.selectList("selectDataAll");
+			SqlMapperInter inter = (SqlMapperInter)sqlSession.getMapper(SqlMapperInter.class);
+			list = inter.selectDataAll();
+			
 		} catch (Exception e) {
 			System.out.println("selectDataAll err : " + e); 
 		} finally {
@@ -27,12 +29,13 @@ public class ProcessDao implements ProcessInter {
 	}
 	
 	@Override
-	public DataDto selectPart(String id) {
+	public DataDto selectDataPart(String id) { 
 		SqlSession sqlSession = factory.openSession();
 		DataDto dto = null;
 		
 		try {
-			dto = sqlSession.selectOne("selectPart", id);
+			SqlMapperInter inter = (SqlMapperInter)sqlSession.getMapper(SqlMapperInter.class);
+			dto = inter.selectDataPart(id);
 		} catch (Exception e) {
 			System.out.println("selectPart err : " + e); 
 		} finally {
@@ -48,7 +51,8 @@ public class ProcessDao implements ProcessInter {
 		SqlSession sqlSession = factory.openSession();
 		
 		try {
-			if(sqlSession.insert("insertData", form) > 0) {
+			SqlMapperInter inter = (SqlMapperInter)sqlSession.getMapper(SqlMapperInter.class);
+			if(inter.insertData(form) > 0) {
 				b = true;
 			}
 			sqlSession.commit();
@@ -68,12 +72,13 @@ public class ProcessDao implements ProcessInter {
 		SqlSession sqlSession = factory.openSession();
 		
 		try {
+			SqlMapperInter inter = (SqlMapperInter)sqlSession.getMapper(SqlMapperInter.class);
 			// 비밀번호 비교 후 수정 여부 판단 
-			DataDto dto = selectPart(form.getId());
+			DataDto dto = inter.selectDataPart(form.getId());
 			
 			if(dto.getPasswd().equals(form.getPasswd())) {
 				// 수정 처리
-				if(sqlSession.update("updateData", form) > 0) {
+				if(inter.updateData(form) > 0) {
 					b = true;
 					sqlSession.commit();
 				}
@@ -94,7 +99,8 @@ public class ProcessDao implements ProcessInter {
 		SqlSession sqlSession = factory.openSession();
 		
 		try {
-			int cou = sqlSession.delete("deleteData", id); 
+			SqlMapperInter inter = (SqlMapperInter)sqlSession.getMapper(SqlMapperInter.class);
+			int cou = inter.deleteData(id);
 			if(cou > 0) b = true;
 			sqlSession.commit();
 		} catch (Exception e) {
