@@ -6,7 +6,7 @@
 <%
 request.setCharacterEncoding("utf-8");
 String id = request.getParameter("id");
-DataDto dto = processDao.selectPart(id);
+DataDto dto = processDao.selectDataPart(id); 
 %>
 <!DOCTYPE html>
 <html>
